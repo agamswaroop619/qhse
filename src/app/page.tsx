@@ -1,12 +1,9 @@
-import Image from "next/image";
-
+import Header from "./components/header";
 export default function Home() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
+    <div style={{ fontFamily: "Arial, sans-serif" }}>
       <main>
-        <header style={{ textAlign: "center", marginBottom: "40px" }}>
-          <link rel="icon" href="/favicon.png" sizes="any" />
-        </header>
+        <Header />
         <section style={{ marginBottom: "20px" }}>
           <h2>System Certification Support</h2>
           <ul>
