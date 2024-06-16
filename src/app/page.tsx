@@ -5,8 +5,7 @@ export default function Home() {
     <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
       <main>
         <header style={{ textAlign: "center", marginBottom: "40px" }}>
-          <Image src="/favicon.png" alt="QHSE Logo" width={100} height={100} />
-          <h1>Welcome to QHSE Solutions</h1>
+          <link rel="icon" href="/favicon.png" sizes="any" />
         </header>
         <section style={{ marginBottom: "20px" }}>
           <h2>System Certification Support</h2>
