@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <AppBar position="static">
         <Toolbar>
           <Typography
@@ -65,21 +65,18 @@ export default function Navbar() {
           }}
         >
           <BottomNavigationAction
-            label="Home"
             icon={<HomeIcon />}
             component={Link}
             href="/home"
             style={{ color: theme.palette.primary.contrastText }}
           />
           <BottomNavigationAction
-            label="Solutions"
             icon={<BuildIcon />}
             component={Link}
             href="/solutions"
             style={{ color: theme.palette.primary.contrastText }}
           />
           <BottomNavigationAction
-            label="About"
             icon={<InfoIcon />}
             component={Link}
             href="/about"
