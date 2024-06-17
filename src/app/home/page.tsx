@@ -1,9 +1,10 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Navbar from "../components/navbar";
 export default function page() {
   return (
     <div>
-      <Header />{" "}
+      <Header /> <Navbar />
       <section style={{ marginBottom: "20px" }}>
         <h2>System Certification Support</h2>
         <ul>
