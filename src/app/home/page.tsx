@@ -7,8 +7,6 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-// Sample images
 const images = [
   "https://source.unsplash.com/random/800x600",
   "https://source.unsplash.com/random/800x601",
