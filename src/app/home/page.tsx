@@ -40,10 +40,11 @@ export default function Page() {
           }}
         >
           <Typography variant="h2" component="h1" gutterBottom>
-            <span style={{ color: "#007bff" }}>Q</span>
-            <span style={{ color: "#ff0000" }}>H</span>
-            <span style={{ color: "#008000" }}>S</span>
-            <span style={{ color: "#ffa500" }}>E</span> Solutions
+            <span style={{ color: "#007bff", fontWeight: "700" }}>Q</span>
+            <span style={{ color: "#ff0000", fontWeight: "700" }}>H</span>
+            <span style={{ color: "#ffa500", fontWeight: "700" }}>S</span>
+            <span style={{ color: "#008000", fontWeight: "700" }}>E</span>{" "}
+            Solutions
           </Typography>
           <Typography variant="h5" component="h2" style={{ color: "black" }}>
             Transforming Businesses with{" "}
