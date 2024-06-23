@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", zIndex: "10" }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "#003366" }}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -34,7 +34,10 @@ export default function Navbar() {
               textAlign: isMobile ? "center" : "left",
             }}
           >
-            QHSE Solutions
+            <span style={{ color: "#007bff" }}>Q</span>
+            <span style={{ color: "#ff0000" }}>H</span>
+            <span style={{ color: "#008000" }}>S</span>
+            <span style={{ color: "#ffa500" }}>E</span> Solutions
           </Typography>
           {!isMobile && (
             <Tabs
@@ -60,7 +63,7 @@ export default function Navbar() {
             width: "100%",
             position: "fixed",
             bottom: 0,
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: "#003366",
             color: theme.palette.primary.contrastText,
           }}
         >

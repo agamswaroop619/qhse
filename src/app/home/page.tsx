@@ -8,13 +8,14 @@ import Header from "../components/header";
 import Navbar from "../components/navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+// Sample images
 const images = [
-  "https://unsplash.com/photos/JZT2_7OP2sQ",
-  "https://unsplash.com/photos/5QgIuuBxKwM",
-  "https://unsplash.com/photos/8LgHzjU4zB8",
-  "https://unsplash.com/photos/2FPjlAyMQTA",
-  "https://unsplash.com/photos/Gx1fdcQs6KY",
-  "https://unsplash.com/photos/Wpnoqo2plFA",
+  "https://source.unsplash.com/random/800x600",
+  "https://source.unsplash.com/random/800x601",
+  "https://source.unsplash.com/random/800x602",
+  "https://source.unsplash.com/random/800x603",
+  "https://source.unsplash.com/random/800x604",
+  "https://source.unsplash.com/random/800x605",
 ];
 
 export default function Page() {
@@ -39,9 +40,12 @@ export default function Page() {
           }}
         >
           <Typography variant="h2" component="h1" gutterBottom>
-            QHSE Solutions
+            <span style={{ color: "#007bff" }}>Q</span>
+            <span style={{ color: "#ff0000" }}>H</span>
+            <span style={{ color: "#008000" }}>S</span>
+            <span style={{ color: "#ffa500" }}>E</span> Solutions
           </Typography>
-          <Typography variant="h5" component="h2">
+          <Typography variant="h5" component="h2" style={{ color: "black" }}>
             Transforming Businesses with{" "}
             <Typewriter
               words={[
@@ -54,10 +58,10 @@ export default function Page() {
               ]}
               loop
               cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
+              cursorStyle={<span style={{ color: "#003366" }}>•</span>}
+              typeSpeed={60}
+              deleteSpeed={40}
+              delaySpeed={1500}
             />
           </Typography>
         </Box>
