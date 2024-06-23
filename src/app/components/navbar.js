@@ -50,7 +50,7 @@ export default function Navbar() {
             >
               <Tab label="Home" component={Link} href="/home" />
               <Tab label="Solutions" component={Link} href="/solutions" />
-              <Tab label="About" component={Link} href="/about" />
+              <Tab label="Connect" component={Link} href="/connect" />
             </Tabs>
           )}
         </Toolbar>
@@ -83,7 +83,7 @@ export default function Navbar() {
           <BottomNavigationAction
             icon={<InfoIcon />}
             component={Link}
-            href="/about"
+            href="/connect"
             style={{ color: theme.palette.primary.contrastText }}
           />
         </BottomNavigation>
