@@ -1,9 +1,20 @@
 "use client";
+import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Carousel } from "react-responsive-carousel";
 import { Typewriter } from "react-simple-typewriter";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
+
+const images = [
+  "https://unsplash.com/photos/JZT2_7OP2sQ",
+  "https://unsplash.com/photos/5QgIuuBxKwM",
+  "https://unsplash.com/photos/8LgHzjU4zB8",
+  "https://unsplash.com/photos/2FPjlAyMQTA",
+  "https://unsplash.com/photos/Gx1fdcQs6KY",
+  "https://unsplash.com/photos/Wpnoqo2plFA",
+];
 
 export default function Page() {
   return (
@@ -12,7 +23,7 @@ export default function Page() {
       <Navbar />
       <Box
         sx={{
-          height: "100vh",
+          height: "50vh",
           width: "100%",
           display: "flex",
           justifyContent: "center",
@@ -20,6 +31,7 @@ export default function Page() {
           flexDirection: "column",
           backgroundColor: "#f5f5f5",
           textAlign: "center",
+          position: "relative",
         }}
       >
         <Typography variant="h2" component="h1" gutterBottom>
@@ -29,21 +41,46 @@ export default function Page() {
           Transforming Businesses with{" "}
           <Typewriter
             words={[
-              "ISO Certifications.",
-              "Safety Training.",
-              "Environmental Compliance.",
-              "Continuous Improvement.",
-              "Risk Assessment.",
-              "Compliance Initiatives.",
+              "ISO Certifications",
+              "Safety Training",
+              "Environmental Compliance",
+              "Continuous Improvement",
+              "Risk Assessment",
+              "Compliance Initiatives",
             ]}
             loop
             cursor
             cursorStyle="|"
-            typeSpeed={90}
-            deleteSpeed={60}
-            delaySpeed={1500}
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
           />
         </Typography>
+      </Box>
+      <Box
+        sx={{
+          height: "50vh",
+          width: "100%",
+        }}
+      >
+        <Carousel
+          showArrows={true}
+          autoPlay
+          infiniteLoop
+          showThumbs={false}
+          showStatus={false}
+          interval={2000}
+        >
+          {images.map((img, index) => (
+            <div key={index}>
+              <img
+                src={img}
+                alt={`Slide ${index}`}
+                style={{ height: "50vh", objectFit: "cover" }}
+              />
+            </div>
+          ))}
+        </Carousel>
       </Box>
       <section style={{ marginBottom: "20px" }}>
         <h2>System Certification Support</h2>

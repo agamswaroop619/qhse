@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Add these lines to your main CSS file */
+@import "~react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 :root {
   --foreground-rgb: 0, 0, 0;

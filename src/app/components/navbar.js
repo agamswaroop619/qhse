@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column", zIndex: "10" }}>
       <AppBar position="static">
         <Toolbar>
           <Typography
@@ -34,7 +34,7 @@ export default function Navbar() {
               textAlign: isMobile ? "center" : "left",
             }}
           >
-            My Website
+            QHSE Solutions
           </Typography>
           {!isMobile && (
             <Tabs
