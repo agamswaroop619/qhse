@@ -42,7 +42,7 @@ export default function Page() {
             <span style={{ color: "#ff0000", fontWeight: "700" }}>H</span>
             <span style={{ color: "#ffa500", fontWeight: "700" }}>S</span>
             <span style={{ color: "#008000", fontWeight: "700" }}>E</span>{" "}
-            Solutions
+            Services
           </Typography>
           <Typography variant="h5" component="h2" style={{ color: "black" }}>
             Transforming Businesses with{" "}

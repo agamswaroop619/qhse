@@ -38,7 +38,7 @@ export default function Navbar() {
             <span style={{ color: "#ff0000", fontWeight: "700" }}>H</span>
             <span style={{ color: "#ffa500", fontWeight: "700" }}>S</span>
             <span style={{ color: "#008000", fontWeight: "700" }}>E</span>{" "}
-            Solutions
+            Services
           </Typography>
           {!isMobile && (
             <Tabs
