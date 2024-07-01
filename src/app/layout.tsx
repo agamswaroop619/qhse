@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "QHSE Solution",
+  title: "QHSE Services",
   description: "Empowering Businesses with QHSE Expertise",
 };
 

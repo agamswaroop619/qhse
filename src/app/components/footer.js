@@ -9,7 +9,7 @@ export default function Footer() {
       style={{ marginTop: "auto" }}
     >
       <img src="/favicon.png" alt="QHSE Solutions Logo" />
-      <p>&copy; 2024 QHSE Solutions. All rights reserved.</p>
+      <p>&copy; 2024 QHSE Services. All rights reserved.</p>
     </footer>
   );
 }
