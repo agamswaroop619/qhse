@@ -8,7 +8,7 @@ export default function Footer() {
       className="bg-light text-dark flex px-2"
       style={{ marginTop: "auto" }}
     >
-      <img src="/favicon.png" alt="QHSE Solutions Logo" />
+      <img src="/favicon.png" alt="QHSE Services Logo" />
       <p>&copy; 2024 QHSE Services. All rights reserved.</p>
     </footer>
   );

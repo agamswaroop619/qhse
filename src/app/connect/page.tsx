@@ -17,7 +17,7 @@ export default function Page() {
         <section style={{ marginBottom: "20px" }}>
           <h2>Connect</h2>
           <p>Mobile: +91-7079841145 (Mr. Ajay Ranjan)</p>
-          <p>Email: connect.qhse.solution@gmail.com</p>
+          <p>Email: connect.qhse.services@gmail.com</p>
         </section>
       </Box>
       <Footer />

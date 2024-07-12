@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -17,10 +17,25 @@ import InfoIcon from "@mui/icons-material/Info";
 export default function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const pathname = window.location.pathname;
+      if (pathname === "/home") {
+        setValue(0);
+      } else if (pathname === "/solutions") {
+        setValue(1);
+      } else if (pathname === "/connect") {
+        setValue(2);
+      }
+    }
+  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    const paths = ["/home", "/solutions", "/connect"];
+    window.location.href = paths[newValue];
   };
 
   return (
@@ -48,9 +63,9 @@ export default function Navbar() {
               indicatorColor="secondary"
               textColor="inherit"
             >
-              <Tab label="Home" component={Link} href="/home" />
-              <Tab label="Solutions" component={Link} href="/solutions" />
-              <Tab label="Connect" component={Link} href="/connect" />
+              <Tab label="Home" />
+              <Tab label="Solutions" />
+              <Tab label="Connect" />
             </Tabs>
           )}
         </Toolbar>
@@ -69,21 +84,18 @@ export default function Navbar() {
           }}
         >
           <BottomNavigationAction
+            label="Home"
             icon={<HomeIcon />}
-            component={Link}
-            href="/home"
             style={{ color: theme.palette.primary.contrastText }}
           />
           <BottomNavigationAction
+            label="Solutions"
             icon={<BuildIcon />}
-            component={Link}
-            href="/solutions"
             style={{ color: theme.palette.primary.contrastText }}
           />
           <BottomNavigationAction
+            label="Connect"
             icon={<InfoIcon />}
-            component={Link}
-            href="/connect"
             style={{ color: theme.palette.primary.contrastText }}
           />
         </BottomNavigation>
